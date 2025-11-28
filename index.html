@@ -1,52 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>Birthway – Landing Page</title>
+  <title>קורס הכנה ללידה ולהורות ראשונית</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #faf7f4;
-      color: #333;
-    }
-    header {
-      background: white;
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #444;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      margin-top: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Support</a>
-    <a href="#stories">Stories</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- TOP BAR / NAV -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Two Midwives Co</div>
+      <nav class="nav-links">
+        <a href="#about">קצת עלינו</a>
+        <a href="#goal">המטרה שלנו</a>
+        <a href="#course">על הקורס</a>
+        <a href="#details">פרטים והרשמה</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <h1>Warm, continuous support for pregnancy, birth and postpartum.</h1>
-  <p>This is a clean placeholder version just to verify the HTML displays correctly.</p>
-</div>
+  <main>
 
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <!-- TODO: put the big title from the Wix page here -->
+          <h1>כותרת ראשית של הקורס</h1>
+
+          <!-- TODO: short subtitle line -->
+          <p class="hero-subtitle">
+            כאן תבוא שורת הסבר קצרה על הקורס ועל שתיכן כמנחות.
+          </p>
+
+          <a href="#details" class="btn btn-primary">להרשמה לקורס</a>
+        </div>
+
+        <!-- TODO: replace the placeholder with your own image -->
+        <div class="hero-image">
+          <div class="image-placeholder">
+            תמונת היריון / זוג (להחלפה בתמונה אמיתית)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote">
+      <div class="container">
+        <!-- TODO: put the quote text here -->
+        <p class="quote-text">
+          "כאן תבוא ציטטה יפה על לידה והורות."
+        </p>
+        <!-- TODO: quote author -->
+        <p class="quote-author">שם המחבר</p>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>קצת עלינו</h2>
+        <!-- TODO: one or two paragraphs about the two of you -->
+        <p>
+          כאן תוכלו לכתוב בקצרה עליכן, על הדרך המקצועית והאישית שהובילה אתכן
+          ללוות זוגות ולבנות את הקורס.
+        </p>
+
+        <div class="cards-grid">
+          <!-- Midwife 1 card -->
+          <article class="card">
+            <div class="card-image image-placeholder">
+              תמונה של מנחה 1
+            </div>
+            <div class="card-body">
+              <!-- TODO: name -->
+              <h3>שם מנחה 1</h3>
+              <!-- TODO: short title line -->
+              <p class="card-tagline">תיאור קצר – מיילדת מוסמכת | תיאור נוסף</p>
+              <!-- TODO: bio paragraph -->
+              <p>
+                כאן יופיע טקסט קצר על מנחה 1 – רקע מקצועי, ניסיון, מקום עבודה וכדומה.
+              </p>
+            </div>
+          </article>
+
+          <!-- Midwife 2 card -->
+          <article class="card">
+            <div class="card-image image-placeholder">
+              תמונה של מנחה 2
+            </div>
+            <div class="card-body">
+              <!-- TODO: name -->
+              <h3>שם מנחה 2</h3>
+              <!-- TODO: short title line -->
+              <p class="card-tagline">תיאור קצר – מיילדת מוסמכת | תיאור נוסף</p>
+              <!-- TODO: bio paragraph -->
+              <p>
+                כאן יופיע טקסט קצר על מנחה 2 – רקע מקצועי, ניסיון, הוראה, קורסים וכדומה.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR GOAL -->
+    <section id="goal" class="section section-alt">
+      <div class="container">
+        <h2>המטרה שלנו</h2>
+        <!-- TODO: copy the goal paragraph(s) here -->
+        <p>
+          כאן תוכלו לכתוב מה המטרה של הקורס – מה תרצו לתת לזוגות, איך הידע והניסיון
+          שלכן מתורגמים לכלים פרקטיים עבורם, לפני הלידה ואחריה.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT THE COURSE -->
+    <section id="course" class="section">
+      <div class="container">
+        <h2>על הקורס</h2>
+        <!-- TODO: main description text from "על הקורס" -->
+        <p>
+          כאן תבוא פסקה שמתארת את הקורס כמארג שלם של כלים, ידע ותמיכה,
+          שמלווה את המשתתפים מהשבועות שלפני הלידה ועד הימים הראשונים בבית.
+        </p>
+
+        <!-- OPTIONAL IMAGE STRIP -->
+        <div class="image-row">
+          <div class="image-placeholder">תמונה 1</div>
+          <div class="image-placeholder">תמונה 2</div>
+          <div class="image-placeholder">תמונה 3</div>
+        </div>
+
+        <!-- WHAT WE LEARN -->
+        <h3 class="section-subtitle">מה נלמד</h3>
+        <ul class="bullet-list">
+          <!-- TODO: replace each item with your real bullet from the Wix page -->
+          <li>נושא 1 – החליפו את הטקסט לנושא האמיתי.</li>
+          <li>נושא 2 – למשל מה קורה בשבועות האחרונים להיריון.</li>
+          <li>נושא 3 – מתי לפנות למיון, איך יודעים שהלידה התחילה וכו'.</li>
+          <li>נושא 4 – התמודדות עם כאב, אפשרויות אלחוש ועוד.</li>
+          <li>נושא 5 – החלמה אחרי לידה, הנקה, היבטים רגשיים וזוגיים.</li>
+        </ul>
+
+        <!-- TARGET AUDIENCE -->
+        <h3 class="section-subtitle">למי הקורס מיועד</h3>
+        <p>
+          כאן תכתבו למי הקורס מיועד (שבוע היריון, האם מגיעים עם מלווה ועוד).
+        </p>
+
+        <!-- COURSE STRUCTURE -->
+        <h3 class="section-subtitle">מבנה הקורס</h3>
+        <ul class="bullet-list">
+          <li>מפגש קבוצתי מרוכז אחד – כתבו כאן כמה שעות ותיאור האווירה.</li>
+          <li>משך המפגש, סוג הפעילות, זמן לשאלות ודיון פתוח.</li>
+          <li>ליווי נוסף לאחר המפגש – לדוגמה קבוצת וואטסאפ ייעודית.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BIG CALL TO ACTION -->
+    <section class="cta">
+      <div class="container">
+        <!-- TODO: main CTA text like "מוזמנים להצטרף אלינו..." -->
+        <h2>מוזמנים להצטרף לקהילה חמה ותומכת</h2>
+        <p>
+          כאן תזמינו את הזוגות להצטרף, ותדגישו את התחושה של ידע, רוגע וחיבור.
+        </p>
+        <a href="#details" class="btn btn-primary">לפרטים והרשמה</a>
+      </div>
+    </section>
+
+    <!-- DETAILS & REGISTRATION -->
+    <section id="details" class="section section-alt">
+      <div class="container details-grid">
+        <div>
+          <h2>פרטים והרשמה</h2>
+          <!-- TODO: location -->
+          <p><strong>מיקום:</strong> מרכז תל אביב / כתובת מדויקת</p>
+          <!-- TODO: price -->
+          <p><strong>מחיר הקורס:</strong> סכום מלא ליולדת + מלווה</p>
+          <ul class="bullet-list small">
+            <li>כאן תוכלו לכתוב על האפשרות להחזר מקופות חולים / ביטוחים.</li>
+            <li>אפשרות לרכישת Gift Card כמתנה.</li>
+            <li>ערכת מתנה בסיום הקורס – החליפו את הטקסט לפי מה שמופיע בדף.</li>
+          </ul>
+        </div>
+
+        <div class="details-contact">
+          <!-- CONTACT INFO -->
+          <p><strong>אימייל:</strong> <a href="mailto:twomidwifes@gmail.com">twomidwifes@gmail.com</a></p>
+          <!-- TODO: phone / WhatsApp link -->
+          <p><strong>טלפון:</strong> 050-0000000</p>
+
+          <!-- SIMPLE CONTACT FORM (static) -->
+          <form
+            class="contact-form"
+            onsubmit="alert('זהו אתר סטטי. חברו את הטופס לשירות כמו Formspree / Netlify Forms.'); return false;"
+          >
+            <label>
+              שם מלא
+              <input type="text" required />
+            </label>
+            <label>
+              אימייל
+              <input type="email" required />
+            </label>
+            <label>
+              הודעה
+              <textarea rows="3" placeholder="ספרו לנו קצת עליכם ועל הציפיות מהקורס."></textarea>
+            </label>
+            <button type="submit" class="btn btn-secondary">שליחת הודעה</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Two Midwives Co</span>
+      <span class="credits">
+        צילומים וקרדיטים – כתבו כאן את הקרדיטים כפי שמופיעים באתר המקורי.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
